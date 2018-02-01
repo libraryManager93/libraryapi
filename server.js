@@ -7,7 +7,7 @@ var jwt    = require('jsonwebtoken');
 var path = require('path');//to get the folders path
 var apiRoutes = express.Router();// get an instance of the router for api routes
 const util = require('util');
-Object.assign=require('object-assign')
+Object.assign=require('object-assign')+
 
 app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'));
