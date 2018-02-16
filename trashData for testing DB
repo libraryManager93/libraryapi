@@ -1,20 +1,760 @@
 
 db.books.insertMany([
-{"title_suggest":"The ABC Murders","title":"The ABC Murders","cover_edition_key":"OL8736147M","book_count_i":4,"author_name":["Agatha Christie"],"contributor":["Hugh Fraser (Narrator)","Geoffrey Matthews (Narrator)","John Moffatt (Performer)","Stamatopoulos, Eleni."],"publisher":["ISIS Audio Books","A. Mondadori","Librairie des Champs-Elysees.","Fontana / Collins","Fontana","W. Clement Stone","G.K. Hall","Pocket Books","Collins","ISIS Publishing","Black Dog & Leventhal Publishers","Librairie des Champs-Elysées","HarperCollins Audio","Planet Three Publishing Network.","Pocket","Simon & Schuster","Bantam Books, Inc.","Harpercollins Uk","Hayakawa Shobō","Simon & Schuster Canada","Collins Crime","Putnam Adult","The Audio Partners, Mystery Masters","Macmillan Audio Books","Berkley","Librairie générale française","Ulverscroft Large Print","Collins for the Crime Club","Pan Books","Dodd, Mead","Tandem Library","Collins Crime Club","Grosset & Dunlap","BBC Audiobooks Ltd","Published for the Crime Club by Collins","Lyhnari.","HarperCollins","Editorial Molino","HarperCollins Publishers"],"first_sentence":["It was in June of 1935 that I came home from my ranch in South America for a stay of about six months.","IT was in June of 1935 that I came home from my ranch in South America for a stay of about six months."],"language":["fre","jpn","eng","ita","gre","spa"],"subject":["Investigadores privados","Hercule Poirot (Fictitious character)","Private investigators","Asesinatos seriales","Serial murders","Accessible book","Fiction in English","In library","Detective and mystery stories","Fiction","Poirot, Hercule (Personaje literario)","Belgians","Protected DAISY","Ficción"]},
+{ 
+    "_id" : ObjectId("5a476391e64a5d01160a88d3"), 
+    "title_suggest" : "The ABC Murders", 
+    "title" : "The ABC Murders", 
+    "cover_edition_key" : "OL8736147M", 
+    "book_count_i" : 4.0, 
+    "author_name" : [
+        "Agatha Christie"
+    ], 
+    "contributor" : [
+        "Hugh Fraser (Narrator)", 
+        "Geoffrey Matthews (Narrator)", 
+        "John Moffatt (Performer)", 
+        "Stamatopoulos, Eleni."
+    ], 
+    "publisher" : [
+        "ISIS Audio Books", 
+        "A. Mondadori", 
+        "Librairie des Champs-Elysees.", 
+        "Fontana / Collins", 
+        "Fontana", 
+        "W. Clement Stone", 
+        "G.K. Hall", 
+        "Pocket Books", 
+        "Collins", 
+        "ISIS Publishing", 
+        "Black Dog & Leventhal Publishers", 
+        "Librairie des Champs-Elysées", 
+        "HarperCollins Audio", 
+        "Planet Three Publishing Network.", 
+        "Pocket", 
+        "Simon & Schuster", 
+        "Bantam Books, Inc.", 
+        "Harpercollins Uk", 
+        "Hayakawa Shobō", 
+        "Simon & Schuster Canada", 
+        "Collins Crime", 
+        "Putnam Adult", 
+        "The Audio Partners, Mystery Masters", 
+        "Macmillan Audio Books", 
+        "Berkley", 
+        "Librairie générale française", 
+        "Ulverscroft Large Print", 
+        "Collins for the Crime Club", 
+        "Pan Books", 
+        "Dodd, Mead", 
+        "Tandem Library", 
+        "Collins Crime Club", 
+        "Grosset & Dunlap", 
+        "BBC Audiobooks Ltd", 
+        "Published for the Crime Club by Collins", 
+        "Lyhnari.", 
+        "HarperCollins", 
+        "Editorial Molino", 
+        "HarperCollins Publishers"
+    ], 
+    "first_sentence" : [
+        "It was in June of 1935 that I came home from my ranch in South America for a stay of about six months.", 
+        "IT was in June of 1935 that I came home from my ranch in South America for a stay of about six months."
+    ], 
+    "language" : [
+        "fre", 
+        "jpn", 
+        "eng", 
+        "ita", 
+        "gre", 
+        "spa"
+    ], 
+    "subject" : [
+        "Investigadores privados", 
+        "Hercule Poirot (Fictitious character)", 
+        "Private investigators", 
+        "Asesinatos seriales", 
+        "Serial murders", 
+        "Accessible book", 
+        "Fiction in English", 
+        "In library", 
+        "Detective and mystery stories", 
+        "Fiction", 
+        "Poirot, Hercule (Personaje literario)", 
+        "Belgians", 
+        "Protected DAISY", 
+        "Ficción"
+    ], 
+    "image_url" : "/assets/theAbcMurders.jpeg"
+}
+{ 
+    "_id" : ObjectId("5a4784f7e64a5d01160a88d5"), 
+    "title_suggest" : "Sleeping Murder", 
+    "title" : "Sleeping Murder", 
+    "cover_edition_key" : "OL24369043M", 
+    "book_count_i" : 6.0, 
+    "author_name" : [
+        "Agatha Christie"
+    ], 
+    "contributor" : [
+        "Rosemary Leach (Narrator)", 
+        "Stephanie Cole (Narrator)"
+    ], 
+    "publisher" : [
+        "Bantam", 
+        "Bantam Books", 
+        "Collins [for] the Crime Club", 
+        "Econo-Clad Books", 
+        "G.K. Hall", 
+        "The Audio Partners", 
+        "Chivers Audio Books", 
+        "HarperCollins Audio", 
+        "New American Library", 
+        "Amereon Limited", 
+        "Planet Three Publishing Network.", 
+        "Bantam Doubleday Dell", 
+        "Fontana", 
+        "Bantam Books, Inc.", 
+        "Collins Crime", 
+        "Erich Flückiger Vierte Auflage", 
+        "The Audio Partners, Mystery Masters", 
+        "A Bantam Book / published by arrangement with Dodd, Mead & Company", 
+        "HARPERCOLLINS", 
+        "Librairie générale française", 
+        "Book Club Associates", 
+        "Ulverscroft Large Print", 
+        "Signet", 
+        "HARPER COLLINS 0 PUB", 
+        "Dodd, Mead", 
+        "Ted Smart", 
+        "Ulverscroft", 
+        "HarperCollins", 
+        "HarperCollins Publishers", 
+        "HARPER COLLINS 1 PAP"
+    ], 
+    "first_sentence" : [
+        "Gwenda Reed stood, shivering a little, on the quay-side."
+    ], 
+    "language" : [
+        "ger", 
+        "fre", 
+        "eng"
+    ], 
+    "subject" : [
+        "Women detectives", 
+        "Jane Marple (Fictitious character)", 
+        "Accessible book", 
+        "Fiction in English", 
+        "In library", 
+        "Fiction", 
+        "Protected DAISY", 
+        "Women detectives in fiction", 
+        "Large type books"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88d8"), 
+    "title_suggest" : "Murder List", 
+    "title" : "Murder List", 
+    "cover_edition_key" : "OL9703656M", 
+    "book_count_i" : 5.0, 
+    "author_name" : [
+        "Julie Garwood"
+    ], 
+    "contributor" : [
+        "Joyce Bean (Narrator)"
+    ], 
+    "publisher" : [
+        "Ballantine Books", 
+        "Thorndike Press", 
+        "Brilliance Audio on MP3-CD", 
+        "Brilliance Audio", 
+        "Random House Publishing Group", 
+        "Brilliance Audio Unabridged Lib Ed", 
+        "Brilliance Audio Paperback Audiobooks", 
+        "Brilliance Audio on CD Value Priced", 
+        "Brilliance Audio on MP3-CD Lib Ed", 
+        "Brilliance Audio Unabridged"
+    ], 
+    "first_sentence" : [
+        "THE DEMON WANTED OUT."
+    ], 
+    "language" : [
+        "eng"
+    ], 
+    "subject" : [
+        "Cult members", 
+        "Murder", 
+        "Police", 
+        "Serial murders", 
+        "Accessible book", 
+        "Government investigators", 
+        "Fiction", 
+        "Romantic suspense fiction", 
+        "OverDrive", 
+        "Suspense", 
+        "Protected DAISY", 
+        "Businesswomen", 
+        "Thriller"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88dc"), 
+    "title_suggest" : "Murder", 
+    "title" : "Murder", 
+    "cover_edition_key" : "OL676813M", 
+    "book_count_i" : 0.0, 
+    "author_name" : [
+        "Sara L. Knox"
+    ], 
+    "publisher" : [
+        "Duke University Press"
+    ], 
+    "language" : [
+        "eng"
+    ], 
+    "subject" : [
+        "Murder in literature", 
+        "Murder in mass media", 
+        "Murder literature"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4784b9e64a5d01160a88d4"), 
+    "title_suggest" : "Murder on the Orient Express", 
+    "title" : "Murder on the Orient Express", 
+    "cover_edition_key" : "OL5252603M", 
+    "book_count_i" : 4.0, 
+    "author_name" : [
+        "Agatha Christie"
+    ], 
+    "contributor" : [
+        "Fukizawa, Tadae.", 
+        "Postif, Louis.", 
+        "David Suchet (Narrator)", 
+        "Kandori, Nobuo, 1931-", 
+        "Riviere, Francois.", 
+        "Miniac, Jean Francois.", 
+        "Andrew Sachs (Narrator)", 
+        "Copyright Paperback Collection (Library of Congress)", 
+        "John Moffatt (Performer)"
+    ], 
+    "publisher" : [
+        "European Schoolbooks", 
+        "Bantam Books", 
+        "Fontana", 
+        "Librarie Des Champs-Elysees", 
+        "Simon & Shuster", 
+        "BBC Audiobooks America", 
+        "The Audio Partners", 
+        "Pocket Books", 
+        "Chivers Audio Books", 
+        "Pub. for the Crime Club, ltd., by Collins", 
+        "Random House Audio", 
+        "Librairie générale française", 
+        "Hachette jeunesse", 
+        "BBC Audiobooks", 
+        "Dodd, Mead & Co.", 
+        "HarperCollins Audio", 
+        "Pocket", 
+        "Harper", 
+        "Lawrence E. Spivak", 
+        "Berkeley Press", 
+        "Le Livre de Poche", 
+        "Pocket Books (Mm)", 
+        "Arnoldo Mondatori", 
+        "P.F. Collier & Son", 
+        "Black Dog & Leventhal Publishers", 
+        "HarperCollins", 
+        "Librairie des Champs-Elysées", 
+        "Agatha Christie Ltd/Planet Three Publishing Network", 
+        "G K Hall Audio Books", 
+        "Berkley Books", 
+        "ImPress", 
+        "Livre de poche", 
+        "Librairie des Champs-Elysses", 
+        "Yuan liu chu ban gong si", 
+        "Livre De Poche French", 
+        "Published for the Crime club by Collins", 
+        "Macmillan Audio Books", 
+        "Pocket Books, inc.", 
+        "Wydawnictwo Dolnośla̧skie", 
+        "Berkley", 
+        "Collins for the Crime Club", 
+        "Shinchōsha", 
+        "Dodd, Mead", 
+        "Popurasja", 
+        "Tandem Library", 
+        "The Audio Partners, Mystery Masters", 
+        "F.A. Thorpe", 
+        "Heron Books", 
+        "Claude leFranco Editeur", 
+        "Harpercollins (Mm)", 
+        "Paramount Pictures", 
+        "Editorial Molino", 
+        "HarperCollins Publishers", 
+        "Perfection Learning Prebound", 
+        "Librairie des Champs-Élysées"
+    ], 
+    "first_sentence" : [
+        "It was five o'clock on a winter's morning in Syria."
+    ], 
+    "language" : [
+        "fre", 
+        "jpn", 
+        "chi", 
+        "eng", 
+        "ita", 
+        "pol", 
+        "spa"
+    ], 
+    "subject" : [
+        "Mystery", 
+        "Hercule Poirot (Fictitious character)", 
+        "Private investigators", 
+        "Detective and mystery stories", 
+        "Private investigators in fiction", 
+        "Trains", 
+        "Accessible book", 
+        "Fiction in English", 
+        "In library", 
+        "Orient Express (Express train)", 
+        "Fiction", 
+        "OverDrive", 
+        "Murder", 
+        "Railroad stories", 
+        "Protected DAISY", 
+        "Railroad", 
+        "Juvenile fiction"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a47854ae64a5d01160a88d6"), 
+    "title_suggest" : "A murder of quality", 
+    "title" : "A murder of quality", 
+    "cover_edition_key" : "OL9407542M", 
+    "book_count_i" : 2.0, 
+    "author_name" : [
+        "John le Carré"
+    ], 
+    "contributor" : [
+        "Le Carré, John, 1931-", 
+        "Frederick Davidson (Narrator)"
+    ], 
+    "publisher" : [
+        "Ripol Klassik", 
+        "Thorndike Press", 
+        "Bantam Books", 
+        "Paul Zsolnay", 
+        "Media Books Audio Publishing", 
+        "Walker & Co.", 
+        "Random House Audiobooks", 
+        "Sceptre", 
+        "Hodder & Stoughton Ltd", 
+        "Blackstone Audiobooks", 
+        "Scribner", 
+        "Books On Tape", 
+        "Random House UK Ltd (A Division of Random House Group)", 
+        "Hill", 
+        "Hodder & Stoughton", 
+        "Walker", 
+        "New American Library", 
+        "Chivers", 
+        "Gollancz", 
+        "Penguin"
+    ], 
+    "language" : [
+        "ger", 
+        "rus", 
+        "eng"
+    ], 
+    "subject" : [
+        "In library", 
+        "Translations into Russian", 
+        "Accessible book", 
+        "Fiction in English", 
+        "Detective and mystery stories, American", 
+        "Popular Print Disabled Books", 
+        "Private schools", 
+        "American Detective and mystery stories", 
+        "George Smiley (Fictitious character)", 
+        "Protected DAISY", 
+        "Large type books", 
+        "Fiction"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88d7"), 
+    "title_suggest" : "Murder for Christmas", 
+    "title" : "Murder for Christmas", 
+    "cover_edition_key" : "OL4477465M", 
+    "book_count_i" : 4.0, 
+    "author_name" : [
+        "Agatha Christie"
+    ], 
+    "contributor" : [
+        "Hugh Fraser (Narrator)", 
+        "Huang, Xiaojuan.", 
+        "Crime Club.", 
+        "Copyright Paperback Collection (Library of Congress)"
+    ], 
+    "publisher" : [
+        "Distributed by Workman Pub. Co", 
+        "Books, Inc.", 
+        "Fontana", 
+        "W. Clement Stone", 
+        "Dodd, Mead & company", 
+        "Distributed by Workman Pub.", 
+        "Pan in association with Collins", 
+        "Collins", 
+        "Pan", 
+        "Black Dog & Leventhal Publishers", 
+        "HarperCollins Publishers Ltd", 
+        "Yuan liu chu ban shi ye gu fen you xian gong si", 
+        "Harpercollins (Mm)", 
+        "ISIS Audio Books", 
+        "Collins Crime", 
+        "Berkley Books", 
+        "Putnam Adult", 
+        "Planet Three Publishing Network.", 
+        "Ulverscroft Large Print", 
+        "Collins for the Crime Club", 
+        "Black Dog & Leventhal", 
+        "Planeta", 
+        "HarperCollins"
+    ], 
+    "first_sentence" : [
+        "STEPHEN pulled up the collar of his coat as he walked briskly along the platform."
+    ], 
+    "language" : [
+        "spa", 
+        "chi", 
+        "eng"
+    ], 
+    "subject" : [
+        "Investigadores privados", 
+        "Hercule Poirot (Fictitious character)", 
+        "Private investigators", 
+        "Navidad", 
+        "Novela policíaca inglesa", 
+        "Accessible book", 
+        "Fiction in English", 
+        "In library", 
+        "Fiction", 
+        "Poirot, Hercule (Personaje literario)", 
+        "Protected DAISY", 
+        "Ficción", 
+        "Christmas"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88d9"), 
+    "title_suggest" : "Murder is easy", 
+    "title" : "Murder is easy", 
+    "cover_edition_key" : "OL9669978M", 
+    "book_count_i" : 1.0, 
+    "author_name" : [
+        "Agatha Christie"
+    ], 
+    "contributor" : [
+        "Hugh Fraser (Narrator)"
+    ], 
+    "publisher" : [
+        "ISIS Publishing", 
+        "Harper Collins", 
+        "HarperCollins Publishers Ltd", 
+        "Dodd, Mead", 
+        "Tandem Library", 
+        "Pan", 
+        "HarperCollins", 
+        "Fontana", 
+        "Planet Three Publishing Network.", 
+        "Bt Bound", 
+        "Macmillan", 
+        "St. Martin's Paperbacks", 
+        "Ulverscroft", 
+        "F.A.Thorpe", 
+        "HarperCollins Audio", 
+        "Collins", 
+        "HARPER COLLINS 1 PAP", 
+        "St. Martin's Minotaur", 
+        "Collins for the Crime Club", 
+        "Harpercollins (Mm)"
+    ], 
+    "first_sentence" : [
+        "England! England after many years!"
+    ], 
+    "language" : [
+        "eng"
+    ], 
+    "subject" : [
+        "In library", 
+        "Police", 
+        "Superintendent Battle (Fictitious character)", 
+        "Accessible book", 
+        "Fiction in English", 
+        "Fiction", 
+        "Serial murder investigation", 
+        "Protected DAISY", 
+        "Serial murder"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88da"), 
+    "title_suggest" : "Murder unprompted", 
+    "title" : "Murder unprompted", 
+    "cover_edition_key" : "OL7544516M", 
+    "book_count_i" : 1.0, 
+    "author_name" : [
+        "Simon Brett"
+    ], 
+    "contributor" : [
+        "Geoffrey Howard (Narrator)"
+    ], 
+    "publisher" : [
+        "Vista", 
+        "Chivers Audio Books", 
+        "Blackstone Audiobooks", 
+        "Warner Books", 
+        "Dell Publishing Company", 
+        "G.K. Hall", 
+        "Recorded Books", 
+        "Futura", 
+        "Scribner", 
+        "Gollancz", 
+        "iUniverse", 
+        "Fischer Taschenbuch"
+    ], 
+    "language" : [
+        "ger", 
+        "eng"
+    ], 
+    "subject" : [
+        "In library", 
+        "Accessible book", 
+        "Protected DAISY", 
+        "Fiction", 
+        "Charles Paris (Fictitious character)", 
+        "Actors", 
+        "English fiction", 
+        "Large type books"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88db"), 
+    "title_suggest" : "Murder", 
+    "title" : "Murder", 
+    "cover_edition_key" : "OL8951084M", 
+    "book_count_i" : 0.0, 
+    "author_name" : [
+        "Shani D'Cruze", 
+        "Sandra Walklate", 
+        "Samantha Pegg"
+    ], 
+    "contributor" : [
+        "Hazel Croall (Editor)"
+    ], 
+    "publisher" : [
+        "Willan Pub"
+    ], 
+    "first_sentence" : [
+        "The act of murder has always aroused public interest, yet there is surprisingly little written about this crime from a criminological perspective."
+    ], 
+    "language" : [
+        "eng"
+    ], 
+    "subject" : [
+        "English law: criminal law", 
+        "Sociology", 
+        "Social Science", 
+        "True crime", 
+        "Crime & criminology", 
+        "Criminal Law - General", 
+        "Murder", 
+        "Criminology"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88dd"), 
+    "title_suggest" : "Murder being once done", 
+    "title" : "Murder being once done", 
+    "cover_edition_key" : "OL9270788M", 
+    "book_count_i" : 3.0, 
+    "author_name" : [
+        "Ruth Rendell"
+    ], 
+    "contributor" : [
+        "Robin Bailey (Narrator)", 
+        "George Baker (Narrator)", 
+        "Rendell, Ruth, 1930-"
+    ], 
+    "publisher" : [
+        "Hutchinson", 
+        "Ullstein", 
+        "HarperCollins Audio", 
+        "Vintage", 
+        "Knopf Doubleday Publishing Group", 
+        "New York Bantam 1975.", 
+        "Goldmann", 
+        "Published for the Crime Club by Doubleday", 
+        "Arrow Books", 
+        "T︠S︡entrpoligraf", 
+        "Random House Publishing Group", 
+        "Vintage Books USA", 
+        "Chivers Audio Books", 
+        "Slovo", 
+        "Thorndike Press", 
+        "Book Club Associates", 
+        "Chivers", 
+        "Random House Audio"
+    ], 
+    "language" : [
+        "ger", 
+        "rus", 
+        "eng"
+    ], 
+    "subject" : [
+        "Mystery", 
+        "In library", 
+        "Detective and mystery stories", 
+        "Police", 
+        "Accessible book", 
+        "Inspector Wexford (Fictitious character)", 
+        "Fiction", 
+        "OverDrive", 
+        "Protected DAISY", 
+        "Large type books"
+    ]
+}
+{ 
+    "_id" : ObjectId("5a4786b0e64a5d01160a88de"), 
+    "title_suggest" : "Murder in three acts", 
+    "title" : "Murder in three acts", 
+    "cover_edition_key" : "OL7264556M", 
+    "book_count_i" : 3.0, 
+    "author_name" : [
+        "Agatha Christie"
+    ], 
+    "contributor" : [
+        "Hugh Fraser (Narrator)", 
+        "Andrew Sachs (Narrator)", 
+        "Copyright Paperback Collection (Library of Congress)", 
+        "Christie, Agatha, 1890-1976."
+    ], 
+    "publisher" : [
+        "Popular Library", 
+        "HARPER COLLINS", 
+        "Berkley Books", 
+        "Dodd, Mead", 
+        "Berkley Pub Group", 
+        "HarperColiins", 
+        "The Audio Partners, Mystery Masters", 
+        "Fontana", 
+        "The Crime Club", 
+        "Chivers Audio Books", 
+        "Berkley", 
+        "G.K. Hall", 
+        "Dodd, Mead & company", 
+        "Tandem Library", 
+        "HarperCollins", 
+        "Collier", 
+        "Pan in association with Collins", 
+        "Collins", 
+        "BBC Audiobooks", 
+        "Ulverscroft Large Print", 
+        "HarperCollins Audio"
+    ], 
+    "first_sentence" : [
+        "MR. Satterthwaite sat on the terrace of Crow's Nest and watched his host, Sir Charles Cartwright, climbing up the path from the sea."
+    ], 
+    "language" : [
+        "eng"
+    ], 
+    "subject" : [
+        "Hercule Poirot (Fictitious character)", 
+        "Private investigators", 
+        "Murder in fiction", 
+        "Private investigators in fiction", 
+        "Accessible book", 
+        "Fiction in English", 
+        "In library", 
+        "Detective and mystery stories", 
+        "Fiction", 
+        "Murder", 
+        "Protected DAISY", 
+        "Large type books"
+    ]
+}
 
-{"title_suggest":"Murder for Christmas","title":"Murder for Christmas","cover_edition_key":"OL4477465M","book_count_i":4,"author_name":["Agatha Christie"],"contributor":["Hugh Fraser (Narrator)","Huang, Xiaojuan.","Crime Club.","Copyright Paperback Collection (Library of Congress)"],"publisher":["Distributed by Workman Pub. Co","Books, Inc.","Fontana","W. Clement Stone","Dodd, Mead & company","Distributed by Workman Pub.","Pan in association with Collins","Collins","Pan","Black Dog & Leventhal Publishers","HarperCollins Publishers Ltd","Yuan liu chu ban shi ye gu fen you xian gong si","Harpercollins (Mm)","ISIS Audio Books","Collins Crime","Berkley Books","Putnam Adult","Planet Three Publishing Network.","Ulverscroft Large Print","Collins for the Crime Club","Black Dog & Leventhal","Planeta","HarperCollins"],"first_sentence":["STEPHEN pulled up the collar of his coat as he walked briskly along the platform."],"language":["spa","chi","eng"],"subject":["Investigadores privados","Hercule Poirot (Fictitious character)","Private investigators","Navidad","Novela policíaca inglesa","Accessible book","Fiction in English","In library","Fiction","Poirot, Hercule (Personaje literario)","Protected DAISY","Ficción","Christmas"]}
-,
-{"title_suggest":"Murder List","title":"Murder List","cover_edition_key":"OL9703656M","book_count_i":5,"author_name":["Julie Garwood"],"contributor":["Joyce Bean (Narrator)"],"publisher":["Ballantine Books","Thorndike Press","Brilliance Audio on MP3-CD","Brilliance Audio","Random House Publishing Group","Brilliance Audio Unabridged Lib Ed","Brilliance Audio Paperback Audiobooks","Brilliance Audio on CD Value Priced","Brilliance Audio on MP3-CD Lib Ed","Brilliance Audio Unabridged"],"first_sentence":["THE DEMON WANTED OUT."],"language":["eng"],"subject":["Cult members","Murder","Police","Serial murders","Accessible book","Government investigators","Fiction","Romantic suspense fiction","OverDrive","Suspense","Protected DAISY","Businesswomen","Thriller"]}
-,
-{"title_suggest":"Murder is easy","title":"Murder is easy","cover_edition_key":"OL9669978M","book_count_i":1,"author_name":["Agatha Christie"],"contributor":["Hugh Fraser (Narrator)"],"publisher":["ISIS Publishing","Harper Collins","HarperCollins Publishers Ltd","Dodd, Mead","Tandem Library","Pan","HarperCollins","Fontana","Planet Three Publishing Network.","Bt Bound","Macmillan","St. Martin's Paperbacks","Ulverscroft","F.A.Thorpe","HarperCollins Audio","Collins","HARPER COLLINS 1 PAP","St. Martin's Minotaur","Collins for the Crime Club","Harpercollins (Mm)"],"first_sentence":["England! England after many years!"],"language":["eng"],"subject":["In library","Police","Superintendent Battle (Fictitious character)","Accessible book","Fiction in English","Fiction","Serial murder investigation","Protected DAISY","Serial murder"]}
-,
-{"title_suggest":"Murder unprompted","title":"Murder unprompted","cover_edition_key":"OL7544516M","book_count_i":1,"author_name":["Simon Brett"],"contributor":["Geoffrey Howard (Narrator)"],"publisher":["Vista","Chivers Audio Books","Blackstone Audiobooks","Warner Books","Dell Publishing Company","G.K. Hall","Recorded Books","Futura","Scribner","Gollancz","iUniverse","Fischer Taschenbuch"],"language":["ger","eng"],"subject":["In library","Accessible book","Protected DAISY","Fiction","Charles Paris (Fictitious character)","Actors","English fiction","Large type books"]}
-,
-{"title_suggest":"Murder","title":"Murder","cover_edition_key":"OL8951084M","book_count_i":0,"author_name":["Shani D'Cruze","Sandra Walklate","Samantha Pegg"],"contributor":["Hazel Croall (Editor)"],"publisher":["Willan Pub"],"first_sentence":["The act of murder has always aroused public interest, yet there is surprisingly little written about this crime from a criminological perspective."],"language":["eng"],"subject":["English law: criminal law","Sociology","Social Science","True crime","Crime & criminology","Criminal Law - General","Murder","Criminology"]}
-,
-{"title_suggest":"Murder","title":"Murder","cover_edition_key":"OL676813M","book_count_i":0,"author_name":["Sara L. Knox"],"publisher":["Duke University Press"],"language":["eng"],"subject":["Murder in literature","Murder in mass media","Murder literature"]}
-,
-{"title_suggest":"Murder being once done","title":"Murder being once done","cover_edition_key":"OL9270788M","book_count_i":3,"author_name":["Ruth Rendell"],"contributor":["Robin Bailey (Narrator)","George Baker (Narrator)","Rendell, Ruth, 1930-"],"publisher":["Hutchinson","Ullstein","HarperCollins Audio","Vintage","Knopf Doubleday Publishing Group","New York Bantam 1975.","Goldmann","Published for the Crime Club by Doubleday","Arrow Books","T︠S︡entrpoligraf","Random House Publishing Group","Vintage Books USA","Chivers Audio Books","Slovo","Thorndike Press","Book Club Associates","Chivers","Random House Audio"],"language":["ger","rus","eng"],"subject":["Mystery","In library","Detective and mystery stories","Police","Accessible book","Inspector Wexford (Fictitious character)","Fiction","OverDrive","Protected DAISY","Large type books"]}
-,
-{"title_suggest":"Murder in three acts","title":"Murder in three acts","cover_edition_key":"OL7264556M","book_count_i":3,"author_name":["Agatha Christie"],"contributor":["Hugh Fraser (Narrator)","Andrew Sachs (Narrator)","Copyright Paperback Collection (Library of Congress)","Christie, Agatha, 1890-1976."],"publisher":["Popular Library","HARPER COLLINS","Berkley Books","Dodd, Mead","Berkley Pub Group","HarperColiins","The Audio Partners, Mystery Masters","Fontana","The Crime Club","Chivers Audio Books","Berkley","G.K. Hall","Dodd, Mead & company","Tandem Library","HarperCollins","Collier","Pan in association with Collins","Collins","BBC Audiobooks","Ulverscroft Large Print","HarperCollins Audio"],"first_sentence":["MR. Satterthwaite sat on the terrace of Crow's Nest and watched his host, Sir Charles Cartwright, climbing up the path from the sea."],"language":["eng"],"subject":["Hercule Poirot (Fictitious character)","Private investigators","Murder in fiction","Private investigators in fiction","Accessible book","Fiction in English","In library","Detective and mystery stories","Fiction","Murder","Protected DAISY","Large type books"]}
+])
+
+
+
+db.counts.insertMany([
+{ 
+    "_id" : ObjectId("5a451bf2d3025dbafc9b2fc1"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514478578996.0
+}
+{ 
+    "_id" : ObjectId("5a451cadd3025dbafc9b2fc2"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514478765507.0
+}
+{ 
+    "_id" : ObjectId("5a476718ae234142f42a247f"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514628888759.0
+}
+{ 
+    "_id" : ObjectId("5a476860ae234142f42a2480"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514629216460.0
+}
+{ 
+    "_id" : ObjectId("5a476b19f608ce320cf2cf06"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514629913824.0
+}
+{ 
+    "_id" : ObjectId("5a476c4d84acb4214047189d"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514630221026.0
+}
+{ 
+    "_id" : ObjectId("5a4771ea84acb4214047189e"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514631658795.0
+}
+{ 
+    "_id" : ObjectId("5a478807bb6bbceee803b2c0"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514637319879.0
+}
+{ 
+    "_id" : ObjectId("5a4789fdb686c66ff8193325"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1514637821460.0
+}
+{ 
+    "_id" : ObjectId("5a7b2f63066c4185587aa178"), 
+    "ip" : "127.0.0.1", 
+    "date" : 1518022499016.0
+}
+])
+
+db.users.insertMany([
+{ 
+    "_id" : ObjectId("5a467f451650ac1c454d11e8"), 
+    "name" : "parthiban", 
+    "password" : "parthiban", 
+    "id" : "836754"
+}
+{ 
+    "_id" : ObjectId("5a4689cf49592af58807dcc8"), 
+    "name" : "test", 
+    "password" : "parthiban", 
+    "id" : "test"
+}
+
+
 ])

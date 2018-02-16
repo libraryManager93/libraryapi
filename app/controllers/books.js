@@ -1,7 +1,15 @@
-module.exports ={
-getAllBooks : (req,res,next)=>{
+const book= require('../models/books')
+
+
+module.exports = {
+getAllBooks : async (req,res,next)=>{
+
+const books= await book.find({});
+console.log('---------------------');
  res.status(200).json({
-            message:'Will get all books :)'
+             success: true,
+          message: 'books Fetched successfully',
+          result: books
             })
 }
 }
