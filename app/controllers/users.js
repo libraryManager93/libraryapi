@@ -7,7 +7,7 @@ app.set('superSecret','ABCDEFGHIJKLMNOPQ'); // secret variable
 module.exports = {
 authenticateUser : async (req,res,next)=>{
 const users=await user.find({id:req.body.id});
-console.log(users);
+console.log(req.body.id);
 if (isEmpty(users)) {
       res.json({ success: false, message: 'Authentication failed. User not found.' });
     }else if (users) {
@@ -40,9 +40,31 @@ if (isEmpty(users)) {
 },
 
 getUsers : async(req,res,next)=>{
-    const users=await user.find({});
-    
+    const users=await user.find({}).select('-password');
+    res.status(200).json({success: true,
+                        message: 'users Fetched successfully',
+                        result:users});
 },
+editUsers : async(req,res,next)=>{
+    const users=await user.findOneAndUpdate({id:req.query.id}, req.body, {new: true}).select('-password');
+    res.status(200).json({success: true,
+                        message: 'User edited successfully',
+                        result:users});
+},
+addUsers : async(req,res,next)=>{
+    const users=await user.find({});
+    const newUser = new user(req.body);
+    const addedUser=await newUser.save().select('-password');
+  res.status(200).json({success: true,
+                        message: 'User added successfully',
+                        result:addedUser});
+},
+deleteUsers : async(req,res,next)=>{
+const users=await user.findOneAndRemove({id:req.query.id}).select('-password');
+    res.status(200).json({success: true,
+                        message: 'User Deleted successfully',
+                        result:users});
+}
 
 }
 

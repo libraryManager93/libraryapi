@@ -1,0 +1,41 @@
+Public API:
+
+router.route('/getAllBooks')
+    .get(booksController.getAllBooks)
+router.route('/authenticate')
+    .post(userController.authenticateUser);
+
+
+Private API:
+
+router.route('/book')
+    .post(booksController.addBooks)
+    .put(booksController.editBooks)
+    .delete(booksController.deleteBooks)
+
+router.route('/users')
+    .get(userController.getUsers)
+    .post(userController.addUser)
+    .put(userController.editUser)
+    .delete(userController.deleteUser);
+
+router.route('/bookRequests')
+    .get(bookRequestController.getBookRequests)
+    .post(bookRequestController.addBookRequests)
+    .put(bookRequestController.editBookRequests) =====> Approve or Reject or Lend
+    .delete(bookRequestController.deleteBookRequests);
+
+router.route('/borrowedBooks')
+    .get(borrowedBooksController.getborrowedBooks)
+    .post(borrowedBooksController.addborrowedBooks)=====> For direct borrowal
+    .put(borrowedBooksController.editborrowedBooks) =====> Returned 
+    .delete(borrowedBooksController.deleteborrowedBooks);
+
+Past Due.
+Monthly Fee During sign up
+subscription expired users
+Past Due Fine
+
+TO DO:
+Changes in controller module ====> Do business functionality in addBorrowedBooks, addBookRequests, 
+all the get methods ==> if it has query param ID it should return one value. Else it should return everything

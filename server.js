@@ -28,6 +28,7 @@ app.use(function(req, res, next) {
   next();
 })
 
+app.set('superSecret','ABCDEFGHIJKLMNOPQ'); // secret variable
 // route middleware to verify a token
 apiRoutes.use(function(req, res, next) {
 

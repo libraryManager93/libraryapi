@@ -4,7 +4,10 @@ validateToken : async (req,res,next)=>{
     console.log('validating...');
   // check header or url parameters or post parameters for token
   const token = req.body.token || req.query.token || req.headers['x-access-token'];
-
+  const jwt    = require('jsonwebtoken');
+  const express= require ('express');
+  const app= express();
+  app.set('superSecret','ABCDEFGHIJKLMNOPQ'); // secret variable
   // decode token
   if (token) {
     console.log('Has token');

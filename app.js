@@ -5,6 +5,10 @@ const mongoose= require ('mongoose');
 var bodyParser = require('body-parser');
 //routes
 const publicApi= require('./app/routes/public/publicApi');
+const booksApi= require('./app/routes/private/books');
+const usersApi= require('./app/routes/private/users');
+const borrowedBooksApi= require('./app/routes/private/borrowedBooks');
+const bookRequestsApi= require('./app/routes/private/bookRequests');
 const validateToken = require('./app/controllers/validateToken');
 //to be deleted
 app.set('env','dev');
@@ -39,6 +43,10 @@ app.use(logger('dev'));
 
 //routes
 app.use(publicApi);
+app.use(validateToken.validateToken,booksApi);
+app.use(validateToken.validateToken,usersApi);
+app.use(validateToken.validateToken,borrowedBooksApi);
+app.use(validateToken.validateToken,bookRequestsApi);
 //app.use(validateToken.validateToken,publicApi);
 
 app.get('/',(req,res)=>{

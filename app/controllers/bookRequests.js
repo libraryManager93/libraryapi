@@ -1,8 +1,8 @@
-const book= require('../models/books')
+const bookRequest= require('../models/bookRequests')
 
 
 module.exports = {
-getAllBooks : async (req,res,next)=>{
+getBookRequests : async (req,res,next)=>{
 
 const books= await book.find({});
 console.log('---------Getting Books------------');
@@ -12,24 +12,24 @@ console.log('---------Getting Books------------');
                         result: books
                      })
 },
-addBooks : async (req,res,next)=>{
-  console.log('---------Adding Books------------');
+addBookRequests : async (req,res,next)=>{
+  console.log('---------Adding Books------------');//Just create req with pending status
   const newBook = new book(req.body);
   const addedBook=await newBook.save();
   res.status(200).json({success: true,
-                        message: 'books added successfully',
+                        message: 'Request added successfully',
                         result:addedBook});
 },
-editBooks : async (req,res,next)=>{
+editBookRequests : async (req,res,next)=>{//approve or reject the request ; if approved reduce the book count to one
       const books=await book.findOneAndUpdate({id:req.query.id}, req.body, {new: true});
     res.status(200).json({success: true,
-                        message: 'Book edited successfully',
+                        message: 'Request edited successfully',
                         result:books});
 },
-deleteBooks : async (req,res,next)=>{
+deleteBookRequests : async (req,res,next)=>{
   const books=await book.findOneAndRemove({id:req.query.id});
     res.status(200).json({success: true,
-                        message: 'Book Deleted successfully',
+                        message: 'Request Deleted successfully',
                         result:books});
 }
 }

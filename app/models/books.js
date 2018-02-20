@@ -6,7 +6,11 @@ const bookSchema= new schema({
          title_suggest: String,
          title:String,
          cover_edition_key:String,
-         book_count_i:String,
+         book_count_i:Number,
+          borrowerIds: [{
+        type: schema.Types.ObjectId,
+        ref : 'user'
+    }],
          author_name:[  
             {type : schema.Types.String}
          ],
@@ -29,5 +33,5 @@ const bookSchema= new schema({
 }
 );
 
-const books= mongoose.model('books',bookSchema);
+const books= mongoose.model('book',bookSchema);
 module.exports=books;
