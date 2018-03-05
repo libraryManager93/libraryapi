@@ -16,7 +16,7 @@ const borrowedBooksSchema= new schema({
     borrowType:String,
     returnedFlag:String,
     pastDue:String
-});
+},{timestamps: true} );
 
 const user= mongoose.model('borrowedBook',borrowedBooksSchema);
 module.exports=user;

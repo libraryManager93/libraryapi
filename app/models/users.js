@@ -7,15 +7,19 @@ const userSchema= new schema({
     password:String,
     maxBooks:Number,
     role:String,
-    borrowedBooks:[{
+    currentlyBorrowedBooks:[{
         type: schema.Types.ObjectId,
-        ref : 'book'
+        ref : 'borrowedBook'
     }],
-     bookRequests:[{
+     previouslyBorrowedBooks:[{
+        type: schema.Types.ObjectId,
+        ref : 'borrowedBook'
+    }],
+     myBookRequests:[{
         type: schema.Types.ObjectId,
         ref : 'bookRequest'
     }]
-});
+},{timestamps: true} );
 
 const user= mongoose.model('user',userSchema);
 module.exports=user;

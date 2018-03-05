@@ -7,7 +7,12 @@ const bookSchema= new schema({
          title:String,
          cover_edition_key:String,
          book_count_i:Number,
-          borrowerIds: [{
+         book_count_t:Number,
+          currentBorrowerIds: [{
+        type: schema.Types.ObjectId,
+        ref : 'user'
+    }],
+          oldBorrowerIds: [{
         type: schema.Types.ObjectId,
         ref : 'user'
     }],
@@ -30,7 +35,7 @@ const bookSchema= new schema({
         {type : schema.Types.String}
          ],
          image_url:String
-}
+},{timestamps: true} 
 );
 
 const books= mongoose.model('book',bookSchema);
