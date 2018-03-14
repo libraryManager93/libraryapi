@@ -12,10 +12,6 @@ const bookSchema= new schema({
         type: schema.Types.ObjectId,
         ref : 'user'
     }],
-          oldBorrowerIds: [{
-        type: schema.Types.ObjectId,
-        ref : 'user'
-    }],
          author_name:[  
             {type : schema.Types.String}
          ],

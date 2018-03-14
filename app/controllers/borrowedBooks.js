@@ -1,4 +1,6 @@
 const borrowedBook= require('../models/borrowedBooks')
+const user= require('../models/users')
+const book= require('../models/books')
 
 
 module.exports = {
@@ -15,11 +17,34 @@ console.log('---------Getting Books------------');
 },
 addborrowedBooks : async (req,res,next)=>{
   console.log('---------Adding Books------------');
-  //To do Subract a count from books collection(if borrow type is direct) and add the userId to it; Add the borrowed book to user collection,
-  //increase the max number by 1 in books collection.
+
+//Added borrow request to borroweDbooks collection
   const newBook = new borrowedBook(req.body);
   const addedBook=await newBook.save();
-  //Subract a count from  books collection 
+  console.log(addedBook._id);
+
+  //increase the max number by 1 in user collection. Add the borrowed book to user collection
+  try{
+ console.log('Trying',req.query.userId);
+const increaseBookCountInUser= await user.findOneAndUpdate({id:req.query.userId},
+{$push: { "currentlyBorrowedBooks": addedBook._id }}, {new: true});
+  }
+  catch(err){
+    console.log('Errorrrrr'+err);
+  }
+/*
+  //Subract a count from  books collection and added borrower id to it
+  if(req.query.bookId && req.query.type==="direct"){
+   const reduceBookInBooks= await book.findOneAndUpdate({cover_edition_key:req.query.bookId},
+   {$push: { 'currentBorrowerIds': increaseBookCountInUser._id }}, { $inc: {book_count_i : -1}}, {new: true});
+}
+
+else{
+ const addBorwInBooks= await book.findOneAndUpdate({cover_edition_key:req.query.bookId},
+   {$push: { 'currentBorrowerIds': increaseBookCountInUser._id }}, {new: true});
+
+}
+*/
   res.status(200).json({success: true,
                         message: 'Added to borrowed book list successfully',
                         result:addedBook});

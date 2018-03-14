@@ -51,3 +51,15 @@ Validations:
 
                     Test:
                     http://localhost:3000/bookRequests?bookId=OL8736147M&id=TestReq
+2) Borrowed Books --> req.query.bookId && req.query.type==="direct" mandatory,req.query.userId
+
+Test
+http://localhost:3000/borrowedBooks?userId="836754"&bookId="OL8736147M"&type="indirect"
+{
+    "userId": ["5a467f451650ac1c454d11e8"],
+    "bookId":["5a476391e64a5d01160a88d3"],
+    "requestId":"5a9d8e60540cce09b12c5d6c",
+    "borrowType":"indirect",
+    "returnedFlag":"false",
+    "pastDue":"false"
+}

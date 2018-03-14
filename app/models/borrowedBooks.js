@@ -10,7 +10,6 @@ const borrowedBooksSchema= new schema({
         type: schema.Types.ObjectId,
         ref : 'book'
     }],
-    borrowedDate:{type: Date, default: Date.now},
     requestId:String,
     dueDate:{type: Date, default: () => Date.now() + 7*24*60*60*1000},//7 days as due date
     borrowType:String,
