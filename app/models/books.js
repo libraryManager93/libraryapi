@@ -8,10 +8,6 @@ const bookSchema= new schema({
          cover_edition_key:String,
          book_count_i:Number,
          book_count_t:Number,
-          currentBorrowerIds: [{
-        type: schema.Types.ObjectId,
-        ref : 'user'
-    }],
          author_name:[  
             {type : schema.Types.String}
          ],

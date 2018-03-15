@@ -21,39 +21,38 @@ addborrowedBooks : async (req,res,next)=>{
 //Added borrow request to borroweDbooks collection
   const newBook = new borrowedBook(req.body);
   const addedBook=await newBook.save();
-  console.log(addedBook._id);
 
   //increase the max number by 1 in user collection. Add the borrowed book to user collection
-  try{
+  
  console.log('Trying',req.query.userId);
-const increaseBookCountInUser= await user.findOneAndUpdate({id:req.query.userId},
-{$push: { "currentlyBorrowedBooks": addedBook._id }}, {new: true});
-  }
-  catch(err){
-    console.log('Errorrrrr'+err);
-  }
-/*
+// const increaseBookCountInUser= await user.findOneAndUpdate({id:req.query.userId},
+// {$push: { "currentlyBorrowedBooks": [addedBook._id] }}, {new: true});
+// console.log(req.query.bookId+'increaseBookCountInUser----req.query.bookId'+increaseBookCountInUser._id);
+
+
   //Subract a count from  books collection and added borrower id to it
   if(req.query.bookId && req.query.type==="direct"){
-   const reduceBookInBooks= await book.findOneAndUpdate({cover_edition_key:req.query.bookId},
-   {$push: { 'currentBorrowerIds': increaseBookCountInUser._id }}, { $inc: {book_count_i : -1}}, {new: true});
+  //  await book.findOneAndUpdate({cover_edition_key:req.query.bookId},
+  //  {$push: { 'currentBorrowerIds': [increaseBookCountInUser._id] }});
+   const reduceBookInBooks= book.findOneAndUpdate({cover_edition_key:req.query.bookId}, { $inc: {book_count_i : -1}}, {new: true});
 }
 
-else{
- const addBorwInBooks= await book.findOneAndUpdate({cover_edition_key:req.query.bookId},
-   {$push: { 'currentBorrowerIds': increaseBookCountInUser._id }}, {new: true});
+// else{
+//  const addBorwInBooks= await book.findOneAndUpdate({cover_edition_key:req.query.bookId},
+//    {$push: { 'currentBorrowerIds': [increaseBookCountInUser._id] }}, {new: true});
 
-}
-*/
+// }
+
   res.status(200).json({success: true,
                         message: 'Added to borrowed book list successfully',
                         result:addedBook});
 },
 //It will change the request to returned
 editborrowedBooks : async (req,res,next)=>{
-      const books=await borrowedBook.findByIdAndUpdate(req.query.id, req.body, {new: true});
+      const books=await borrowedBook.findOneAndUpdate({cover_edition_key:req.query.bookId}, {$set: { 'returned': 'true'}}, {new: true});
       //Add a count to  books collection
-      //reduce a count from user collection max book
+      const addBookInBooks= book.findOneAndUpdate({cover_edition_key:req.query.bookId}, { $inc: {book_count_i : 1}}, {new: true});
+      //Modify books from user collection
     res.status(200).json({success: true,
                         message: 'borrowedBook edited successfully',
                         result:books});

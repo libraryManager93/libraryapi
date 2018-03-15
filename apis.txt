@@ -47,7 +47,8 @@ https://openlibrary.org/api/books?bibkeys=ISBN:9788172234980&jscmd=data&format=j
 
 Validations:
 1) Book request --> to approve/reject the request req.body.approve is mandatory, book id and req Id
-                    while adding, Requesting the same book twice
+                    while adding, 
+                    Requesting the same book twice
 
                     Test:
                     http://localhost:3000/bookRequests?bookId=OL8736147M&id=TestReq
@@ -63,3 +64,5 @@ http://localhost:3000/borrowedBooks?userId="836754"&bookId="OL8736147M"&type="in
     "returnedFlag":"false",
     "pastDue":"false"
 }
+
+3) Max books based validations
